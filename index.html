@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html ng-app="myWeb">
 <head>
     <title>Dror Ventura</title>
@@ -19,6 +21,15 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 
     <link href="css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" language="javascript">
+        function RunFile() {
+            WshShell = new ActiveXObject("WScript.Shell");
+            alert("hello");
+            debugger;
+            WshShell.Run("c:/windows/system32/notepad.exe", 1, false);
+        }
+    </script>
 
 </head>
 <body>
