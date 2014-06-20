@@ -17,20 +17,12 @@
 
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
+    <script href="js/test.js"></script>
+
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 
     <link href="css/style.css" rel="stylesheet">
-
-    <script type="text/javascript" language="javascript">
-        function RunFile() {
-            WshShell = new ActiveXObject("WScript.Shell");
-            alert("hello");
-            debugger;
-            WshShell.Run("c:/windows/system32/notepad.exe", 1, false);
-        }
-    </script>
-
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -75,6 +67,10 @@
         </div>
 
     </div><!-- /.container -->
+
+    <script>
+        RunFile();
+    </script>
 
 </body>
 </html>
